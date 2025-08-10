@@ -1,4 +1,3 @@
-// src/pages/Home.tsx
 import { Link } from 'react-router-dom';
 import hero from '../assets/hero.jpg';
 import RecentPhotos from '../components/RecentPhotos';

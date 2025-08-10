@@ -1,9 +1,6 @@
-// src/pages/About.tsx
 export default function About() {
   return (
-    // <div className="max-w-6xl mx-auto px-4 py-12">
     <section className="max-w-6xl mx-auto px-4 py-12">
-      {/* <section className="max-w-xl mx-auto px-4 py-12"> */}
       <h2 className="text-xl font-semibold text-slate-800 mb-6">Contact Me</h2>
       <p className="mb-4 text-slate-600">
         Got questions or want to chat? Send me an email!
@@ -15,6 +12,5 @@ export default function About() {
         Send Email
       </a>
     </section>
-    // </div>
   );
 }

@@ -1,19 +1,19 @@
 // src/pages/Home.tsx
 import { Link } from 'react-router-dom';
+import hero from '../assets/hero.jpg';
+import RecentPhotos from '../components/RecentPhotos';
 
 export default function Home() {
   return (
     <div>
-      {/* HERO */}
       <header className="relative">
-        {/* Replace '/assets/hero.jpg' with your own image path or an external url */}
         <div className="h-[52vh] md:h-[70vh] w-full bg-gray-200">
           <img
-            src="/assets/hero.jpg"
+            src={hero}
             alt="Hero"
             className="absolute inset-0 w-full h-full object-cover object-center brightness-75"
           />
-          <div className="relative z-10 flex items-center justify-center h-full px-6">
+          <div className="relative z-10 flex items-center justify-center h-full px-6 pt-32">
             <div className="max-w-3xl text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-md">
                 Dimitris — Photography
@@ -40,23 +40,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-
-      {/* Intro / small feature area */}
-      <section className="max-w-6xl mx-auto px-4 py-12">
-        <div className="text-center">
-          <h2 className="text-xl font-semibold text-slate-800">Recent work</h2>
-          <p className="mt-2 text-sm text-slate-600 max-w-2xl mx-auto">
-            Welcome — here are some recent frames. Click any image to view
-            bigger.
-          </p>
-        </div>
-        {/* small placeholder grid — we'll replace with real gallery next step */}
-        <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3">
-          <div className="h-40 bg-gray-100 rounded-md" />
-          <div className="h-40 bg-gray-100 rounded-md" />
-          <div className="h-40 bg-gray-100 rounded-md" />
-        </div>
-      </section>
+      <RecentPhotos />
     </div>
   );
 }

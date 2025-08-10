@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ImageModal from './ImageModal';
 
 const recentPhotos = ['hero1.jpg', 'hero2.jpg', 'hero3.jpg'];
 
@@ -26,26 +27,11 @@ export default function RecentPhotos() {
         ))}
       </div>
 
-      {selected && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
-          onClick={() => setSelected(null)}
-        >
-          <img
-            src={`./${selected}`}
-            alt="Enlarged photo"
-            className="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg"
-            onClick={(e) => e.stopPropagation()}
-          />
-          <button
-            className="absolute top-5 right-5 text-white text-3xl font-bold"
-            onClick={() => setSelected(null)}
-            aria-label="Close image modal"
-          >
-            &times;
-          </button>
-        </div>
-      )}
+      <ImageModal
+        src={selected}
+        alt="Enlarged photo"
+        onClose={() => setSelected(null)}
+      />
     </section>
   );
 }

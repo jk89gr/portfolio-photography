@@ -1,12 +1,20 @@
 // src/pages/About.tsx
 export default function About() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-2xl font-semibold text-slate-800 mb-4">About</h1>
-      <p className="text-slate-600">
-        This page will hold your bio, photography background, and contact
-        details.
+    // <div className="max-w-6xl mx-auto px-4 py-12">
+    <section className="max-w-6xl mx-auto px-4 py-12">
+      {/* <section className="max-w-xl mx-auto px-4 py-12"> */}
+      <h2 className="text-xl font-semibold text-slate-800 mb-6">Contact Me</h2>
+      <p className="mb-4 text-slate-600">
+        Got questions or want to chat? Send me an email!
       </p>
-    </div>
+      <a
+        href="mailto:jk89gr@gmail.com?subject=Contact%20from%20Portfolio%20Website"
+        className="inline-block px-6 py-3 bg-slate-700 text-white rounded-lg hover:bg-slate-900 transition"
+      >
+        Send Email
+      </a>
+    </section>
+    // </div>
   );
 }

@@ -32,7 +32,7 @@ export default function ImageModal({
       onClick={onClose}
     >
       <img
-        src={`/portfolio-photography//${src}`}
+        src={`//${src}`}
         alt={alt}
         className="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg"
         onClick={(e) => e.stopPropagation()}

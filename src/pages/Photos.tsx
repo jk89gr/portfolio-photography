@@ -37,7 +37,7 @@ export default function Photos() {
         {photos.map((src, i) => (
           <img
             key={i}
-            src={`/portfolio-photography//${src}`}
+            src={`//${src}`}
             alt={`Photo ${i + 1}`}
             className="rounded-lg shadow-md object-cover w-full mb-4 cursor-pointer"
             onClick={() => setModalSrc(`./${src}`)}

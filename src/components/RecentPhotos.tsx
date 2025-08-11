@@ -19,7 +19,7 @@ export default function RecentPhotos() {
         {recentPhotos.map((src, i) => (
           <img
             key={i}
-            src={`./${src}`}
+            src={`/portfolio-photography//${src}`}
             alt={`Recent photo ${i + 1}`}
             className="w-full rounded-lg shadow-md object-cover h-48 cursor-pointer"
             onClick={() => setSelected(src)}
